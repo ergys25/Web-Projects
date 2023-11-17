@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
+
+
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox='0 0 32 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0v3.994C14 7.864 10.858 11 7 11c-3.866 0-7-3.138-7-7.006V0h2v4.005C2 6.765 4.24 9 7 9c2.756 0 5-2.236 5-4.995V0h2zm0 26v-5.994C14 16.138 10.866 13 7 13c-3.858 0-7 3.137-7 7.006V26h2v-6.005C2 17.235 4.244 15 7 15c2.76 0 5 2.236 5 4.995V26h2zm2-18.994C16 3.136 19.142 0 23 0c3.866 0 7 3.138 7 7.006v9.988C30 20.864 26.858 24 23 24c-3.866 0-7-3.138-7-7.006V7.006zm2-.01C18 4.235 20.244 2 23 2c2.76 0 5 2.236 5 4.995v10.01C28 19.765 25.756 22 23 22c-2.76 0-5-2.236-5-4.995V6.995z' fill='%23d6cfe0' fill-opacity='0.51' fill-rule='evenodd'/%3E%3C/svg%3E");
+    color: black;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.quote-container{
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.2);
+}
+quote-text{
+    font-size: 2.75rem;
+
+}
+
+.long-quote{
+    font-size: 2rem;
+}
+
+.fa-quote-left{
+    font-size: 2rem;
+    color: #000;
+}
+
+.quote_author{
+    margin-top: 10px;
+    font-size: 1.50rem;
+    font-weight: 400;
+    color: #000;
+    font-style: italic;
+}
+
+.button-container{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: 0;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0.3rem  rgba(121,121,121,0.65);
+    padding: 0.5rem 1.5rem;
+
+}
+
+button:hover{
+    background-color: #444;
+}
+.fa-twitter{
+    font-size: 1.5rem;
+}
+.twitter-button:hover{
+    color: #38a1f3;
+    box-shadow: 0 0.3rem rgba(121,121,121,0.65);
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+/*media queries*/
+@media screen and (max-width: 1000px){
+    .quote-container{
+        margin: auto 10px;
+        width: 90%;
+        padding: 20px 30px;
+    }
+    .quote-text{
+        font-size: 1rem;
+    }
+    .quote-author{
+        font-size: 1rem;
+    }
+}
