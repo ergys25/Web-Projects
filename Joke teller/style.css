@@ -2,11 +2,13 @@
 
 html {
   box-sizing: border-box;
+  font-size: 14px; /* Decrease the font size */
 }
 
 body {
-  background-color: #45badd;
+  background-color: black;
   margin: 0;
+  font-size: 14px; /* Decrease the font size */
 }
 
 .container {
@@ -16,8 +18,31 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url("https://media.giphy.com/media/3o7abtn7DuREEpsyWY/giphy.gif") no-repeat center center fixed;
-  background-size: contain;
+  background: url("https://i.pinimg.com/564x/4a/81/8d/4a818d5eb2afbea8f8b00bab76ee06bc.jpg") no-repeat center center fixed;
+  background-size: auto 100%;
   background-position: left center;
   background-repeat: no-repeat;
+  background-position: center;
 }
+
+button {
+  background-color: #ff3482;
+  color: white;
+  padding: 8px 16px; /* Decrease the padding */
+  font-size: 12px; /* Decrease the font size */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+button:hover {
+  background-color: #ff2270;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Decrease the box shadow */
+}
+
+button:active {
+  background-color: #ff115d;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5); /* Decrease the box shadow */
+}
+
